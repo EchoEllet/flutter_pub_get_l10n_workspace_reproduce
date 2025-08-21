@@ -1,0 +1,19 @@
+name: flutter_pub_get_l10n_workspace_reproduce
+description: "A dummy project to reproduce an issue in Flutter."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.0
+resolution: workspace
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+flutter:
+  generate: true # IMPORTANT to reproduce the issue
+  uses-material-design: true

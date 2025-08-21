@@ -1,0 +1,10 @@
+arb-dir: l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+# IMPORTANT to reproduce the issue. Commenting the line bellow will fix the build failure issue.
+untranslated-messages-file: l10n/untranslated.json
+
+# Workaround is to set "untranslated-messages-file" to "app/l10n/untranslated.json" which will fix the
+# "flutter pub get" failure at the root level, but when running "flutter gen-l10n" inside the "app/" directory,
+# another issue will be introduced:
+# Oops; flutter has exited unexpectedly: "PathNotFoundException: Cannot open file, path = 'app/l10n/untranslated.json' (OS Error: No such file or directory, errno = 2)".
