@@ -1,6 +1,6 @@
 # flutter_pub_get_l10n_workspace_reproduce
 
-A dummy project to reproduce an issue in Flutter.
+A dummy project to reproduce an issue in Flutter (https://github.com/flutter/flutter/issues/174205).
 
 ```
 Generating synthetic localizations package failed with 1 error:
